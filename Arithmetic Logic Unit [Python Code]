@@ -1,0 +1,87 @@
+Arithmetic Logic Unit [Python Code]
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+import math
+class ALU():
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+    def add(self):
+        return self.a+self.b
+    def sub(self):
+        return self.a-self.b
+    def multiply(self):
+        return self.a*self.b
+    def divide(self):
+        return self.a/self.b
+    def modulo_division(self):
+        return self.a%self.b
+    def square_root(self):
+        return math.sqrt(self.a)
+    def OR(self):
+        return self.a or self.b
+    def AND(self):
+        return self.a and self.b
+    def Not(self):
+        return not(self.a)
+    def Increment(self):
+        return self.a+1
+    def Decrement(self):
+        return self.a-1    
+    def BitWise_AND(self):
+        return self.a & self.b
+    def BitWise_OR(self):
+        return self.a | self.b
+    def BitWise_XOR(self):
+        return self.a ^ self.b
+    def BitWise_LeftShift(self):
+        return self.a << self.b
+    def BitWise_RightShift(self):
+        return self.a >> self.b 
+    
+a=int(input('Enter First Number: '))
+b=int(input('Enter First Number: '))
+operator=ALU(a,b)
+x = (' 1.Add \n 2.Sub \n 3.Multiply \n 4.Divide \n 5.modulo division \n 6.square root \n 7.or \n 8.and \n 9.not \n 10.Increment \n 11.Decrement 12.Bitwise And \n 13.Bitwise Or \n 14.Bitwise Xor \n 15.Leftshift \n 16.Rightshift')
+print(x)
+while True:
+    choice = int(input('please select one of the following:'))
+    if choice ==1:
+        print("result: ",operator.add())
+    elif choice ==2:
+        print("result: ",operator.sub())
+    elif choice ==3:
+        print("result: ",operator.multiply())
+    elif choice ==4:
+        print("result: ",operator.divide())
+    elif choice ==5:
+        print("result: ",operator.modulo_division())
+    elif choice ==6:
+        print("result: ",operator.square_root())
+    elif choice ==7:
+        print("result: ",operator.OR())
+    elif choice ==8:
+        print("result: ",operator.AND())
+    elif choice ==9:
+        print("result: ",operator.Not())
+    elif choice ==10:
+        print("result: ",operator.Increment())
+    elif choice ==11:
+        print("result: ",operator.Decrement())
+    elif choice ==12:
+        print("result: ",operator.BitWise_AND())
+    elif choice ==13:
+        print("result: ",operator.BitWise_OR())
+    elif choice ==14:
+        print("result: ",operator.BitWise_XOR())
+    elif choice ==15:
+        print("result: ",operator.BitWise_LeftShift())
+    elif choice ==16:
+        print("result: ",operator.BitWise_RightShift())
+    else:
+        print('Invalid Option')
+        break
+    print()
+                 
+        
+
+
